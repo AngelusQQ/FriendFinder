@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<HTML>
+  <HEAD>
+    <TITLE>Friend Finder: Survey</TITLE>
+  </HEAD>
+
+  <STYLE>
+    #Introduction {
+      width:80%;
+      margin-left:10%;
+      margin-right:10%;
+    }
+
+    .infoHeader {
+      text-align:left;
+    }
+
+    .title {
+      text-align:center;
+    }
+
+    #QuestionContainer {
+      width:80%;
+      margin-left:10%;
+      margin-right:10%;
+      border-style:solid;
+      border-width:2px;
+      text-align:center;
+    }
+
+    .slider {
+      width:80%;
+      height:12.5px;
+      -webkit-transition:0.1s;
+      margin-left:10%;
+      margin-right:10%;
+    }
+  </STYLE>
+
+  <BODY>
+    <DIV id="Introduction">
+      <H1 class="title">Survey Questions</H1>
+      <H2 class="infoHeader">Basic Information</H2>
+    </DIV>
+    <DIV id="QuestionContainer">
+      <input type="range" min="1" max="5" value="3" class="slider" id="questionOne">
+    </DIV>
+  </BODY>
+</HTML>
