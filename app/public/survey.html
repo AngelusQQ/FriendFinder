@@ -5,6 +5,7 @@
   </HEAD>
 
   <STYLE>
+
     #Introduction {
       width:80%;
       margin-left:10%;
@@ -29,12 +30,24 @@
     }
 
     .slider {
+      margin-left:0%;
+      margin-right:0%;
       width:80%;
       height:12.5px;
       -webkit-transition:0.1s;
-      margin-left:10%;
-      margin-right:10%;
+      margin-bottom:30px;
     }
+
+    .question {
+      text-align:left;
+      margin-left:5px;
+      margin-bottom:10px;
+    }
+
+    button {
+      background-color:black;
+    }
+
   </STYLE>
 
   <BODY>
@@ -43,7 +56,31 @@
       <H2 class="infoHeader">Basic Information</H2>
     </DIV>
     <DIV id="QuestionContainer">
-      <input type="range" min="1" max="5" value="3" class="slider" id="questionOne">
+      <br>
+      <div class="question"> Random Question </div>
+      <input type="range" min="1" max="5" value="3" class="slider" id="sliderOne">
+      <div class="question"> Random Question </div>
+      <input type="range" min="1" max="5" value="3" class="slider" id="sliderTwo">
+      <div class="question"> Random Question </div>
+      <input type="range" min="1" max="5" value="3" class="slider" id="sliderThree">
+      <div class="question"> Random Question </div>
+      <input type="range" min="1" max="5" value="3" class="slider" id="sliderFour">
+      <div class="question"> Random Question </div>
+      <input type="range" min="1" max="5" value="3" class="slider" id="sliderFive">
+      <div class="question"> Random Question </div>
+      <input type="range" min="1" max="5" value="3" class="slider" id="sliderSix">
+      <div class="question"> Random Question </div>
+      <input type="range" min="1" max="5" value="3" class="slider" id="sliderSeven">
+      <div class="question"> Random Question </div>
+      <input type="range" min="1" max="5" value="3" class="slider" id="sliderEight">
+      <div class="question"> Random Question </div>
+      <input type="range" min="1" max="5" value="3" class="slider" id="sliderNine">
+      <div class="question"> Random Question </div>
+      <input type="range" min="1" max="5" value="3" class="slider" id="sliderTen">
+      <br>
+      <div id="submit">
+        <button type="submit" method="post" id="submitButton"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvIzvXqpZ-cZfZuxY0TLvemsDeEVf1Mb5rWW1n21gpR45P8gsg" height="600" width="600"></button>
+      </div>
     </DIV>
   </BODY>
 </HTML>
