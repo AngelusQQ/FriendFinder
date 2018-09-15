@@ -35,7 +35,9 @@
       width:80%;
       height:12.5px;
       -webkit-transition:0.1s;
+      /* background: url(); */
       margin-bottom:30px;
+      margin-top:15px;
     }
 
     .question {
@@ -45,7 +47,6 @@
     }
 
     button {
-      background-color:black;
     }
 
   </STYLE>
@@ -55,32 +56,23 @@
       <H1 class="title">Survey Questions</H1>
       <H2 class="infoHeader">Basic Information</H2>
     </DIV>
-    <DIV id="QuestionContainer">
-      <br>
-      <div class="question"> Random Question </div>
-      <input type="range" min="1" max="5" value="3" class="slider" id="sliderOne">
-      <div class="question"> Random Question </div>
-      <input type="range" min="1" max="5" value="3" class="slider" id="sliderTwo">
-      <div class="question"> Random Question </div>
-      <input type="range" min="1" max="5" value="3" class="slider" id="sliderThree">
-      <div class="question"> Random Question </div>
-      <input type="range" min="1" max="5" value="3" class="slider" id="sliderFour">
-      <div class="question"> Random Question </div>
-      <input type="range" min="1" max="5" value="3" class="slider" id="sliderFive">
-      <div class="question"> Random Question </div>
-      <input type="range" min="1" max="5" value="3" class="slider" id="sliderSix">
-      <div class="question"> Random Question </div>
-      <input type="range" min="1" max="5" value="3" class="slider" id="sliderSeven">
-      <div class="question"> Random Question </div>
-      <input type="range" min="1" max="5" value="3" class="slider" id="sliderEight">
-      <div class="question"> Random Question </div>
-      <input type="range" min="1" max="5" value="3" class="slider" id="sliderNine">
-      <div class="question"> Random Question </div>
-      <input type="range" min="1" max="5" value="3" class="slider" id="sliderTen">
+    <FORM id="QuestionContainer" action="./survey-submit" method="post">
+      <br> Random Question <br>
+      1 <input type="range" min="1" max="5" value="3" name="1" class="slider"> 5 <br> Random Question <br>
+      1 <input type="range" min="1" max="5" value="3" name="2" class="slider"> 5 <br> Random Question <br>
+      1 <input type="range" min="1" max="5" value="3" name="3" class="slider"> 5 <br> Random Question <br>
+      1 <input type="range" min="1" max="5" value="3" name="4" class="slider"> 5 <br> Random Question <br>
+      1 <input type="range" min="1" max="5" value="3" name="5" class="slider"> 5 <br> Random Question <br>
+      1 <input type="range" min="1" max="5" value="3" name="6" class="slider"> 5 <br> Random Question <br>
+      1 <input type="range" min="1" max="5" value="3" name="7" class="slider"> 5 <br> Random Question <br>
+      1 <input type="range" min="1" max="5" value="3" name="8" class="slider"> 5 <br> Random Question <br>
+      1 <input type="range" min="1" max="5" value="3" name="9" class="slider"> 5 <br> Random Question <br>
+      1 <input type="range" min="1" max="5" value="3" name="10" class="slider"> 5 <br>
       <br>
       <div id="submit">
-        <button type="submit" method="post" id="submitButton"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvIzvXqpZ-cZfZuxY0TLvemsDeEVf1Mb5rWW1n21gpR45P8gsg" height="600" width="600"></button>
+        <button type="submit" id="submitButton"><img src="images.png" height="50" width="200"></button>
       </div>
-    </DIV>
+      <br>
+    </FORM>
   </BODY>
 </HTML>

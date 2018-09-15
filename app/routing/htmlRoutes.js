@@ -8,5 +8,9 @@ module.exports = function(app) {
   app.get('/survey', function(err, res) {
     res.sendFile(path.join(__dirname, "../public/survey.html"));
   });
-  
+
+  app.post('/survey-submit', function(req, res) {
+    console.log(req);
+  });
+
 };
