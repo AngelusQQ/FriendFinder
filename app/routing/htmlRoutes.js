@@ -10,7 +10,9 @@ module.exports = function(app) {
   });
 
   app.post('/survey-submit', function(req, res) {
-    console.log(req);
+    var array =[];
+    for(var i = 1; i <= 10; i++) { array.push(parseInt(req.body[i])); }
+    console.log(array);
   });
 
   app.get('/images', function(req, res) {
