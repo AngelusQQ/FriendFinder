@@ -16,7 +16,7 @@ module.exports = function(app) {
   app.post('/survey-submit', function(req, res) {
     //Creating an array of the player's score
     var array =[];
-    for(var i = 1; i <= 10; i++) { array.push(parseInt(req.body[i])); }
+    for(var i = 0; i < 10; i++) { array.push(parseInt(req.body[i])); }
 
     //Checks to see if the name already exists in the "database" ELSE sort logic
     var name = false; var currentScore = []; var matchScores = [];
@@ -28,7 +28,7 @@ module.exports = function(app) {
         alert('Name already Exists! Please select a different Name!')
       } else {
         //Comparison Logic
-        for(var j = 0; j < friends[i].score.length; j++) {
+        for(var j = 0; j < 10; j++) {
           currentScore.push( Math.abs(friends[i].score[j] - req.body[j]) );
         }
 
@@ -36,12 +36,12 @@ module.exports = function(app) {
         the index of the potential match (we have a reference point) */
         matchScores.push(currentScore.reduce(reducer));
 
+        //Appends the Name of the Match
+        //allMatches.push(friends[indexOfFirst].name);
+        var indexOfFirst = matchScores.indexOf(Math.min.apply(null, matchScores), i);
+        if(indexOfFirst !== -1) { match += friends[indexOfFirst].name + ", "; }
       }
 
-      //Appends the Name of the Match
-      //allMatches.push(friends[indexOfFirst].name);
-      var indexOfFirst = matchScores.indexOf(Math.min.apply(null, matchScores), i);
-      match += friends[indexOfFirst].name + ", ";
     }
 
     //Storing it to the Database
